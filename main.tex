@@ -1,0 +1,123 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc} % codificacao de caracteres
+\usepackage[T1]{fontenc}    % codificacao de fontes
+\usepackage[brazil]{babel}  % idioma
+\usetheme{AnnArbor}         % tema
+\usecolortheme{orchid}      % cores
+\usefonttheme[onlymath]{serif} % fonte modo matematico
+
+\title[\sc{VIM For Dummies}]{VIM For Dummies}
+\author[Lineu Felipe]{Lineu Felipe}
+\institute{Socialbase} % opcional
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Por que usar o VIM?}
+    \pause
+    \begin{enumerate}
+        \item<1-> Muito divertido \pause
+        \item<2-> Modos:
+            \begin{itemize}
+                \item \textbf{Normal} - Atalhos e Comandos
+                \item \textbf{Visual} - Selecao
+                \item \textbf{Insert}
+            \end{itemize}
+            \pause
+        \item<3-> Algumas IDEs tem o modo vim:
+            \begin{itemize}
+                \item \textbf{Sublime}
+                \item \textbf{Qt Creator}
+            \end{itemize}
+            \pause
+        \item<4-> Plugins:
+            \begin{itemize}
+                \item \textbf{Vundle} - Gerenciador de plugins
+                \item \textbf{Fugitive} - GIT
+                \item \textbf{NERDtree} - Navegador de arquivos
+            \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Comandos}
+    ':' coloca em modo comando
+    \begin{enumerate}
+        \item \textbf{w} - Salva
+        \item \textbf{q} - Fecha
+        \item \textbf{wq} - Salva e fecha
+        \item \textbf{s} - Substituicao por regex
+        \item \textbf{[0-9]} - Vai para uma linha
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Atalhos Basicos}
+    \begin{enumerate}
+        \item <1-> \textbf{i, I, a, A, r, R} - Insercao
+        \item <2-> \textbf{v, V} - Selecao
+        \item <3-> \textbf{h, j, k, l, gg, G, \^, \$} - Navegacao
+        \item <4-> \textbf{w} - Palavra
+        \item <5-> \textbf{y, d, c, p} - Copiar, Recortar, Recorta e coloca em modo insert (Repeticao) e Colar
+        \item <6-> \textbf{u, :redo} - Desfazer e refazer
+        \item <7-> \textbf{.} - Repete o ultimo comando
+        \item <8-> \textbf{C-e, C-y} - Page Down e Page Up
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Unindo Atalhos}
+    Exemplos:
+    \begin{enumerate}
+        \item <1-> \textbf{ggVG} - Seleciona todo o texto
+        \item <2-> \textbf{caw} - Apaga a palavra e coloca em modo insert
+        \item <3-> \textbf{9 + w} - Pula '9' palavras
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Marks}
+    \begin{itemize}
+        \item \textbf{m + [uma letra]} - Cria um mark
+        \item \textbf{g' + [uma letra]} - Vai para o mark
+    \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Macros}
+    \begin{itemize}
+        \item \textbf{q + [uma letra]} - Comeca a gravar o macro
+        \item \textbf{q} - Para de gravar
+        \item \textbf{@ + [uma letra]} - Executa o macro
+        \item \textbf{qq} - Executa o ultimo macro
+        \item \textbf{9 + @ + [uma letra]} - Executa '9' vezes o macro
+    \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{EU}
+    Minhas configuracoes do vim:
+    \url{https://github.com/darkSasori/vimfiles}
+    \begin{itemize}
+        \item \url{https://socialbase.socialbase.com.br/#!/members/132/profile}
+        \item \url{https://github.com/darkSasori}
+        \item \url{https://twitter.com/lineufelipe}
+        \item \url{https://facebook.com/lineufelipe}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Duvidas?}
+    \pause
+    \begin{itemize}
+        \item <1-> \textbf{:help [comando ou atalho]} \pause
+        \item <2-> \textbf{GOOGLE}
+    \end{itemize}
+\end{frame}
+
+{%
+ \usebackgroundtemplate{
+  \centering
+  \includegraphics[width=\paperwidth]{fim.jpg}
+ }
+\begin{frame}
+\end{frame}
+
+\end{document}
