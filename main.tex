@@ -28,18 +28,19 @@
                 \item \textbf{Insert}
             \end{itemize}
             \pause
-        \item<3-> Algumas IDEs tem o modo vim:
-            \begin{itemize}
-                \item \textbf{Sublime}
-                \item \textbf{Qt Creator}
-            \end{itemize}
-            \pause
-        \item<4-> Plugins:
+        \item<3-> Plugins:
             \begin{itemize}
                 \item \textbf{Vundle} - Gerenciador de plugins
                 \item \textbf{Fugitive} - GIT
                 \item \textbf{NERDtree} - Navegador de arquivos
             \end{itemize}
+            \pause
+        \item<4-> Algumas IDEs tem o modo vim:
+            \begin{itemize}
+                \item \textbf{Sublime}
+                \item \textbf{Qt Creator}
+            \end{itemize}
+            \pause
     \end{enumerate}
 \end{frame}
 
@@ -51,6 +52,7 @@
         \item \textbf{wq} - Salva e fecha
         \item \textbf{s} - Substituicao por regex
         \item \textbf{[0-9]} - Vai para uma linha
+        \item \textbf{set number} - Númera as linhas
     \end{enumerate}
 \end{frame}
 
@@ -62,8 +64,7 @@
         \item <4-> \textbf{w} - Palavra
         \item <5-> \textbf{y, d, c, p} - Copiar, Recortar, Recorta e coloca em modo insert (Repeticao) e Colar
         \item <6-> \textbf{u, :redo} - Desfazer e refazer
-        \item <7-> \textbf{.} - Repete o ultimo comando
-        \item <8-> \textbf{C-e, C-y} - Page Down e Page Up
+        \item <7-> \textbf{C-e, C-y} - Page Down e Page Up
     \end{enumerate}
 \end{frame}
 
@@ -71,9 +72,19 @@
     Exemplos:
     \begin{enumerate}
         \item <1-> \textbf{ggVG} - Seleciona todo o texto
-        \item <2-> \textbf{caw} - Apaga a palavra e coloca em modo insert
-        \item <3-> \textbf{9 + w} - Pula '9' palavras
+        \item <2-> \textbf{9 + w} - Pula '9' palavras
+        \item <3-> \textbf{caw} - Apaga a palavra e coloca em modo insert
+        \item <4-> \textbf{di(} - Apaga o estiver entre os '(' mas pode ser usado 'w','\{'
     \end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Repetindo}
+    \begin{itemize}
+        \item <1-> \textbf{.} - Repete o ultimo
+        \item <2-> \textbf{9 [atalho]} - Repete o atalho '9' vezes
+        \item <3-> \textbf{:5,10norm! [atalho]} - Executa o atalho da linha 5 até a 10
+        \item <4-> \textbf{:5,10[comando]} - Executa o comando da linha 5 até a 10
+    \end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Marks}
@@ -88,7 +99,7 @@
         \item \textbf{q + [uma letra]} - Comeca a gravar o macro
         \item \textbf{q} - Para de gravar
         \item \textbf{@ + [uma letra]} - Executa o macro
-        \item \textbf{qq} - Executa o ultimo macro
+        \item \textbf{@@} - Executa o ultimo macro
         \item \textbf{9 + @ + [uma letra]} - Executa '9' vezes o macro
     \end{itemize}
 \end{frame}
