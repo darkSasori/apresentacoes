@@ -40,13 +40,13 @@
                 \item \textbf{Sublime}
                 \item \textbf{Qt Creator}
             \end{itemize}
-            \pause
     \end{enumerate}
 \end{frame}
 
 \begin{frame}\frametitle{Comandos}
     ':' coloca em modo comando
     \begin{enumerate}
+        \item \textbf{help} - Ajuda interna do vim
         \item \textbf{w} - Salva
         \item \textbf{q} - Fecha
         \item \textbf{wq} - Salva e fecha
@@ -58,11 +58,11 @@
 
 \begin{frame}\frametitle{Atalhos Basicos}
     \begin{enumerate}
-        \item <1-> \textbf{i, I, a, A, r, R, o, O} - Insercao
+        \item <1-> \textbf{i, I, a, A, r, R, o, O} - Inserção
         \item <2-> \textbf{v, V} - Selecao
-        \item <3-> \textbf{h, j, k, l, gg, G, \^, \$} - Navegacao
+        \item <3-> \textbf{h, j, k, l, gg, G, \^, \$} - Navegação
         \item <4-> \textbf{w} - Palavra
-        \item <5-> \textbf{y, d, c, p} - Copiar, Recortar, Recorta e coloca em modo insert (Repeticao) e Colar
+        \item <5-> \textbf{y, d, c, p} - Copiar, Recortar, Recorta e coloca em modo insert (Navegação ou Repetição) e Colar
         \item <6-> \textbf{u, :redo} - Desfazer e refazer
         \item <7-> \textbf{C-e, C-y} - Page Down e Page Up
     \end{enumerate}
@@ -73,8 +73,11 @@
     \begin{enumerate}
         \item <1-> \textbf{ggVG} - Seleciona todo o texto
         \item <2-> \textbf{9 + w} - Pula '9' palavras
-        \item <3-> \textbf{caw} - Apaga a palavra e coloca em modo insert
-        \item <4-> \textbf{di(} - Apaga o estiver entre os '(' mas pode ser usado 'w','\{'
+        \item <3-> \textbf{caw} - Atalhos usados:
+            \begin{itemize}
+                \item \textbf{c} - Recortar e colocar em modo insert depois do comando, (Item 2 e 5)
+                \item \textbf{aw} - Uma palavra. Ver manual text-object
+            \end{itemize}
     \end{enumerate}
 \end{frame}
 
@@ -91,6 +94,7 @@
     \begin{itemize}
         \item \textbf{m + [uma letra]} - Cria um mark
         \item \textbf{g' + [uma letra]} - Vai para o mark
+        \item \textbf{:marks} - Lista os marks criados
     \end{itemize}
 \end{frame}
 
