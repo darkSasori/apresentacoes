@@ -6,16 +6,12 @@
 \usecolortheme{orchid}      % cores
 \usefonttheme[onlymath]{serif} % fonte modo matematico
 
-\title[\sc{VIM For Dummies}]{VIM For Dummies}
+\title[\sc{Vim aprensetar o ViM para vocês}]{Vim aprensetar o ViM para vocês}
 \author[Lineu Felipe]{Lineu Felipe}
 \institute{Socialbase} % opcional
 \date{\today}
 
 \begin{document}
-
-\begin{frame}\frametitle{Vim aprensetar o ViM para vocês}
-    \pause
-\end{frame}
 
 \begin{frame}
     \titlepage
@@ -24,25 +20,20 @@
 \begin{frame}\frametitle{Por que usar o VIM?}
     \pause
     \begin{enumerate}
-        \item<1-> Muito divertido \pause
-        \item<2-> Modos:
+        \item <1-> Muito divertido \pause
+        \item <2-> Modos:
             \begin{itemize}
                 \item \textbf{Normal} - Atalhos e Comandos
                 \item \textbf{Visual} - Selecao
                 \item \textbf{Insert}
             \end{itemize}
             \pause
-        \item<3-> Plugins:
-            \begin{itemize}
-                \item \textbf{Vundle} - Gerenciador de plugins
-                \item \textbf{Fugitive} - GIT
-                \item \textbf{NERDtree} - Navegador de arquivos
-            \end{itemize}
-            \pause
-        \item<4-> Algumas IDEs tem o modo vim:
+        \item <3-> Algumas editores tem o modo vim:
             \begin{itemize}
                 \item \textbf{Sublime}
+                \item \textbf{Atom}
                 \item \textbf{Qt Creator}
+                \item \textbf{PHP Storm}
             \end{itemize}
     \end{enumerate}
 \end{frame}
@@ -67,7 +58,7 @@
         \item <3-> \textbf{h, j, k, l, gg, G, \^, \$} - Navegação
         \item <4-> \textbf{w} - Palavra
         \item <5-> \textbf{y, d, c, p} - Copiar, Recortar, Recorta e coloca em modo insert (Navegação ou Repetição) e Colar
-        \item <6-> \textbf{u, :redo} - Desfazer e refazer
+        \item <6-> \textbf{u, U} - Desfazer e refazer
         \item <7-> \textbf{C-e, C-y} - Page Down e Page Up
     \end{enumerate}
 \end{frame}
@@ -77,15 +68,15 @@
     \begin{enumerate}
         \item <1-> \textbf{ggVG} - Seleciona todo o texto
         \item <2-> \textbf{9 + w} - Pula '9' palavras
-        \item <3-> \textbf{caw} - Atalhos usados:
+        \item <3-> \textbf{cw} - Atalhos usados:
             \begin{itemize}
                 \item \textbf{c} - Recortar e colocar em modo insert depois do comando, (Item 2 e 5)
-                \item \textbf{aw} - Uma palavra. Ver manual text-object
+                \item \textbf{w} - Uma palavra. Ver manual text-object
             \end{itemize}
     \end{enumerate}
 \end{frame}
 
-\begin{frame}\frametitle{Repetindo}
+\begin{frame}\frametitle{Multiplicadores}
     \begin{itemize}
         \item <1-> \textbf{.} - Repete o ultimo
         \item <2-> \textbf{9 [atalho]} - Repete o atalho '9' vezes
@@ -128,16 +119,16 @@
     \begin{itemize}
         \item <1-> \textbf{:help [comando ou atalho]} \pause
         \item <2-> \textbf{GOOGLE}
+        \item <3->Link Uteis:
+            \begin{itemize}
+                \item \url{http://vim-bootstrap.com/}
+                \item \url{https://vimawesome.com/}
+            \end{itemize}
     \end{itemize}
 \end{frame}
 
-{%
- \usebackgroundtemplate{
-  \centering
+\begin{figure}
   \includegraphics[width=\paperwidth]{fim.jpg}
- }
- }
-\begin{frame}
-\end{frame}
+\end{figure}
 
 \end{document}
